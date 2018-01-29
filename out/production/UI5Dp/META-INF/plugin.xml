@@ -1,0 +1,48 @@
+<idea-plugin>
+    <id>com.ag.ui5.process</id>
+    <name>SAP/Open UI5 Development Plugin</name>
+    <version>1.0.1</version>
+    <vendor email="omer.ersoy@agdanismanlik.com.tr">AG Bilgi Sistemleri ve Danismanlik</vendor>
+
+    <description><![CDATA[
+      <em>A Webstorm Plugin for Developing SAP/Open UI5 Applications</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+        <b>Version 1.0.1</b>
+        <ul>
+            <li>Added go to associated view-controller (shift + ctrl + alt + 8)</li>
+        </ul>
+        <b>Version 1.0.0</b>
+        <ul>
+            <li>Xml View Based Project Template</li>
+            <li>Add Namespaces With Shift + Ctrl + Alt + 7 Shortcut </li>
+            <li>Test,Build and Deploy Your Application With Grunt</li>
+        </ul>
+    ]]>
+    </change-notes>
+    <idea-version since-build="145.0"/>
+
+    <depends>com.intellij.modules.lang</depends>
+    <depends>JavaScript</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <directoryProjectGenerator implementation="com.ag.ui5.process.UI5TemplateGenerator"/>
+    </extensions>
+
+    <actions>
+        <action class="com.ag.ui5.action.NewFileAction" id="NewUI5File" text="UI5" icon="/ui5icon.png">
+            <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFromTemplate"/>
+        </action>
+        <action class="com.ag.ui5.action.AddNamespaceAction" id="AddNameSpace">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt 7"/>
+        </action>
+        <action class="com.ag.ui5.action.GoToFileAction" id="GoToFile">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt 8"/>
+        </action>
+        <!--<action class="com.ag.ui5.action.TestingWithGrunt" id="Testing">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl alt 8"/>
+        </action>-->
+    </actions>
+
+</idea-plugin>

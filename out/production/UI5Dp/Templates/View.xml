@@ -1,0 +1,12 @@
+<mvc:View controllerName="ROOT.controller.VIEW_NAME" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+          displayBlock="true" xmlns="sap.m">
+    <App>
+        <pages>
+            <Page title="{i18n>title}" class="sapUiContentPadding">
+                <content>
+
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

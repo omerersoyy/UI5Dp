@@ -1,0 +1,8 @@
+JSONModel-sap/ui/model/json/JSONModel
+ODataModel-sap/ui/model/odata/v4/ODataModel
+URI-sap/ui/thirdparty/URI
+JQuery-jquery.sap.global
+MessageToast-sap/m/MessageToast
+Filter-sap/ui/model/Filter
+FilterOperator-sap/ui/model/FilterOperator
+MessageBox-sap/m/MessageBox
