@@ -1,29 +1,14 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Version 1.0.1
 
-### What is this repository for? ###
+General usage instructions
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+The creation of the project may take some time due to the webstorm's "updating indices" process.
+Use Shift + Ctrl + Alt + 7 short to insert namespace in Controller. 
+Go to associated view-controller (Shift + Ctrl + Alt + 8)
 
-### How do I get set up? ###
+Add your host and server information in Gruntfile.js (HOST, PORT, SERVER) and perform "npm install".(required node.js) After that you can use grunt tasks for running your app, creating zip versions, uglification and deploying your app to the server.
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
 
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+Plugin and screenshots : https://plugins.jetbrains.com/plugin/10322-sap-open-ui5-development-plugin
